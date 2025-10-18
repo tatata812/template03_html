@@ -573,7 +573,7 @@ header
     padding: 24px 24px 80px;
 
     @include tab {
-      padding: 12px 12px 52px;
+      padding: 24px 12px 52px;
     }
   }
 
@@ -632,7 +632,7 @@ header
   position: relative;
 
   @include tab {
-    padding: 12px 0 80px;
+    padding: 24px 0 80px;
   }
 
   &__inner {
@@ -742,7 +742,7 @@ header
     padding: 64px 24px 160px;
 
     @include tab {
-      padding: 12px 12px 120px;
+      padding: 40px 12px 100px;
     }
   }
 
@@ -813,7 +813,7 @@ gap: 8px;
     padding: 24px 24px 80px;
 
     @include tab {
-      padding: 12px 12px 52px;
+      padding: 24px 12px 52px;
     }
   }
 

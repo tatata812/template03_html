@@ -1037,7 +1037,7 @@ header
 }
 @media (max-width: 600px) {
   .top-lead__inner {
-    padding: 12px 12px 52px;
+    padding: 24px 12px 52px;
   }
 }
 .top-lead__text {
@@ -1060,7 +1060,7 @@ header
 }
 @media (max-width: 600px) {
   .top-info {
-    padding: 12px 0 80px;
+    padding: 24px 0 80px;
   }
 }
 .top-info__inner {
@@ -1152,7 +1152,7 @@ header
 }
 @media (max-width: 600px) {
   .top-menu__inner {
-    padding: 12px 12px 120px;
+    padding: 40px 12px 100px;
   }
 }
 .top-menu__item-wrap {
@@ -1217,7 +1217,7 @@ header
 }
 @media (max-width: 600px) {
   .top-contact__inner {
-    padding: 12px 12px 52px;
+    padding: 24px 12px 52px;
   }
 }
 .top-contact__item {
