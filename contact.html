@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="email=no,telephone=no,address=no">
   <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
-  <title>テンプレート02</title>
+  <title>テンプレート03</title>
   <meta name="description" content="<?php echo $des; ?>">
   <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
   <meta name="robots" content="none">
@@ -37,131 +37,172 @@
 
 <body class="wrap">
   <div class="black-bg"></div>
-  <header class="header">
-    <div class="header__inner">
-      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
-            src="assets/img/top/logo.png" alt="テンプレート"></a>
-      </h1>
-      <a href="" class="header__menu-tel"><i class="fa-solid fa-phone"></i>012-345-6789</a>
 
-      <nav class="header__menu-wrap header__item">
-        <div class="header__menu-inner">
-          <a href="news.html" class="header__menu active">お知らせ</a>
-          <a href="company.html" class="header__menu">会社概要</a>
-          <a href="about.html" class="header__menu">事業案内</a>
-          <a href="services.html" class="header__menu">サービス</a>
-        </div>
+  <header class="header site-right">
+    <div class="header__wrap">
+      <nav class="header__menu-wrap">
+        <a href="index.html" class="header__menu active">TOP</a>
+        <a href="news.html" class="header__menu active">お知らせ</a>
+        <a href="company.html" class="header__menu">会社概要</a>
+        <a href="about.html" class="header__menu">事業案内</a>
+        <a href="services.html" class="header__menu">サービス</a>
       </nav>
-      <a href="contact.html" class="header__right-menu-contact">お問い合わせ</a>
-      <div class="header__btn-wrap header__item open-btn-js" id="js-hamburger-menu">
-        <img src="assets/img/top/hun-btn.png" alt="">
-      </div>
+      <a href="contact.html" class="header__contact">お問い合わせ</a>
     </div>
-    <div class="header-sp">
-      <div class="header-sp__inner">
-        <div class="header-sp__btn-img">
-          <img src="assets/img/top/hun-btn-batsu.png" alt="閉じる">
-        </div>
-        <div class="header-sp__menu">
-          <a href="news.html" class="header-sp__menu-item">お知らせ</a>
-          <a href="company.html" class="header-sp__menu-item">会社概要</a>
-          <a href="about.html" class="header-sp__menu-item">事業案内</a>
-          <a href="services.html" class="header-sp__menu-item">サービス</a>
-          <a href="contact.html" class="header-sp__menu-item">お問い合わせ</a>
-        </div>
+  </header>
+
+  <header class="header-sp">
+    <div class="header-sp__inner">
+      <div class="header-sp__btn-img">
+        <img src="assets/img/top/hun-btn-batsu.png" alt="閉じる">
+      </div>
+      <div class="header-sp__menu">
+        <a href="news.html" class="header-sp__menu-item">お知らせ</a>
+        <a href="company.html" class="header-sp__menu-item">会社概要</a>
+        <a href="about.html" class="header-sp__menu-item">事業案内</a>
+        <a href="services.html" class="header-sp__menu-item">サービス</a>
+        <a href="contact.html" class="header-sp__menu-item">お問い合わせ</a>
       </div>
     </div>
   </header>
 
+  <div class="site-left left-menu">
+    <div class="left-menu__wrap">
+      <a href="index.html" class="left-menu__ttl"><img src="assets/img/top/logo.png" alt="テンプレート"></a>
 
-
-  <div class="main page-contact subpage">
-    <div class="breadcrumbs-wrap">
-      <div class="breadcrumbs-wrap__content">HOME ／ ○○○○ ／ ○○○○</div>
-    </div>
-    <div class="subpage__ttl-wrap">
-      <div class="page-ttl-style">
-        <p class="page-ttl-style__top fade-in-onload">CONTACT</p>
-        <h1 class="page-ttl-style__middle fade-in-onload">お問い合わせ</h1>
+      <p class="left-menu__text">
+        〒012-3456<br>
+        ○○県○○市<br>
+        ○○○○○○1丁目1番1号<br>
+        ○○○○○○○○○○ビル
+      </p>
+      <p class="left-menu__text">
+        営業時間 / 9:00～18:00<br>
+        定休日 / 水曜日
+      </p>
+      <a href="" class="left-menu__tel"><i class="fa-solid fa-phone left-menu__fa-phone"></i>012-888-4444</a>
+      <div class="left-menu__sns-wrap">
+        <a href="" class="left-menu__sns"><img src="assets/img/top/x.png" alt=""></a>
+        <a href="" class="left-menu__sns"><img src="assets/img/top/line.png" alt=""></a>
+        <a href="" class="left-menu__sns"><img src="assets/img/top/fb.png" alt=""></a>
+        <a href="" class="left-menu__sns"><img src="assets/img/top/youtube.png" alt=""></a>
+        <a href="" class="left-menu__sns"><img src="assets/img/top/insta.png" alt=""></a>
       </div>
     </div>
-    <div class="subpage__main">
-<div class="page-contact__form-wrap">
-
-    <label>社名または店名</label>
-    <input type="text" name="company">
-
-    <label><span>必須</span>お名前</label>
-    <input type="text" name="name" required>
-
-    <label><span>必須</span>電話番号</label>
-    <input type="tel" name="tel" required>
-
-    <label><span>必須</span>住所</label>
-    <input type="text" name="address" required>
-
-    <label><span>必須</span>メールアドレス</label>
-    <input type="email" name="email" required>
-
-    <label><span>必須</span>問い合わせ内容</label>
-    <textarea name="message" required></textarea>
-
-     <label><span>必須</span>同意確認</label>
-    <p class="checkbox-text">「<a href="#">個人情報保護方針</a>」をお読みいただき<br class="sp-block">チェックを入れてください</p>
-
-    <div class="checkbox-wrap">
-      <input type="checkbox" name="agree" required id="agree">
-      <label for="agree">同意する</label>
-    </div>
-
-    <button type="submit">送信する</button>
-
-</div>
-
-    </div>
-
-
-
   </div>
-  <!--main end-->
-  <footer class="footer">
-    <div class="footer__inner">
-      <a href="index.html" class="footer__ttl"><img src="assets/img/top/logo.png" alt="テンプレート"></a>
-      <div class="footer__top">
-        <p class="footer__text">
-          〒012-3456<br>
-          ○○県○○市○○○○○○1丁目1番1号<br>
-          ○○○○○○○○○○ビル
-        </p>
-        <p class="footer__text">
-          営業時間 / 9:00～18:00<br>
-          定休日 / 水曜日
-        </p>
-        <a href="" class="footer__tel"><i class="fa-solid fa-phone"></i>012-888-4444</a>
-      </div>
-      <a href="contact.html" class="footer__contact">お問い合わせ</a>
-      <div class="footer__nav">
-        <a href="news.html" class="footer__nav-item">お知らせ</a>
-        <a href="company.html" class="footer__nav-item">会社概要</a>
-        <a href="about.html" class="footer__nav-item">事業案内</a>
-        <a href="services.html" class="footer__nav-item">サービス</a>
-        <a href="userguide.html" class="footer__nav-item">このサイトについて</a>
-        <a href="privacy.html" class="footer__nav-item">個人情報保護方針</a>
-      </div>
-      <div class="footer__sns-wrap">
-        <a href="" class="footer__sns"><img src="assets/img/top/x.png" alt=""></a>
-        <a href="" class="footer__sns"><img src="assets/img/top/line.png" alt=""></a>
-        <a href="" class="footer__sns"><img src="assets/img/top/fb.png" alt=""></a>
-        <a href="" class="footer__sns"><img src="assets/img/top/youtube.png" alt=""></a>
-        <a href="" class="footer__sns"><img src="assets/img/top/insta.png" alt=""></a>
+
+  <div class="site-center">
+    <div class="main-header">
+      <div class="main-header__inner">
+        <a href="index.html" class="main-header__ttl"><img src="assets/img/top/logo.png" alt="テンプレート"></a>
+        <div class="main-header__btn-wrap header__item open-btn-js" id="js-hamburger-menu">
+          <img src="assets/img/top/hun-btn.png" alt="">
+        </div>
       </div>
     </div>
 
-    <div class="footer__bottom">
-      &copy;テンプレート
+    <div class="main page-contact subpage">
+      <div class="breadcrumbs-wrap">
+        <div class="breadcrumbs-wrap__content">HOME ／ ○○○○ ／ ○○○○</div>
+      </div>
+      <div class="subpage__ttl-wrap  fade-in-onload">
+        <div class="page-ttl-style">
+          <h1 class="page-ttl-style__top">お問い合わせ</h1>
+          <p class="page-ttl-style__middle">CONTACT</p>
+        </div>
+      </div>
+
+
+      <div class="subpage__main">
+        <div class="page-contact__form-wrap">
+
+          <label>社名または店名</label>
+          <input type="text" name="company">
+
+          <label><span>必須</span>お名前</label>
+          <input type="text" name="name" required>
+
+          <label><span>必須</span>電話番号</label>
+          <input type="tel" name="tel" required>
+
+          <label><span>必須</span>住所</label>
+          <input type="text" name="address" required>
+
+          <label><span>必須</span>メールアドレス</label>
+          <input type="email" name="email" required>
+
+          <label><span>必須</span>問い合わせ内容</label>
+          <textarea name="message" required></textarea>
+
+          <label><span>必須</span>同意確認</label>
+          <p class="checkbox-text">「<a href="#">個人情報保護方針</a>」をお読みいただき<br class="sp-block">チェックを入れてください</p>
+
+          <div class="checkbox-wrap">
+            <input type="checkbox" name="agree" required id="agree">
+            <label for="agree">同意する</label>
+          </div>
+
+          <button type="submit">送信する</button>
+
+        </div>
+
+      </div>
+
+
+
     </div>
-    <a href="#" class="footer__go-to-btn top-to-js"><img src="assets/img/top/go-top-btn.png" alt=""></a>
-  </footer>
+    <!--main end-->
+    <div class="subpage__footer-dec">
+      <img src="assets/img/subpage/footer-dec.png" alt="">
+    </div>
+
+    <footer class="footer">
+      <div class="footer__top-wrap">
+        <div class="footer__inner">
+          <a href="index.html" class="footer__ttl"><img src="assets/img/top/logo.png" alt="テンプレート"></a>
+          <div class="footer__top">
+            <p class="footer__text">
+              〒012-3456<br>
+              ○○県○○市○○○○○○1丁目1番1号<br>
+              ○○○○○○○○○○ビル
+            </p>
+            <p class="footer__text">
+              営業時間 / 9:00～18:00<br>
+              定休日 / 水曜日
+            </p>
+            <a href="" class="footer__tel"><i class="fa-solid fa-phone"></i>012-888-4444</a>
+          </div>
+          <a href="contact.html" class="footer__contact">お問い合わせ</a>
+          <div class="footer__nav">
+            <a href="news.html" class="footer__nav-item">お知らせ</a>
+            <a href="company.html" class="footer__nav-item">会社概要</a>
+            <a href="about.html" class="footer__nav-item">事業案内</a>
+            <a href="services.html" class="footer__nav-item">サービス</a>
+            <a href="userguide.html" class="footer__nav-item">このサイトについて</a>
+            <a href="privacy.html" class="footer__nav-item">個人情報保護方針</a>
+          </div>
+          <div class="footer__sns-wrap">
+            <a href="" class="footer__sns"><img src="assets/img/top/x.png" alt=""></a>
+            <a href="" class="footer__sns"><img src="assets/img/top/line.png" alt=""></a>
+            <a href="" class="footer__sns"><img src="assets/img/top/fb.png" alt=""></a>
+            <a href="" class="footer__sns"><img src="assets/img/top/youtube.png" alt=""></a>
+            <a href="" class="footer__sns"><img src="assets/img/top/insta.png" alt=""></a>
+          </div>
+        </div>
+        <div class="bottom-dec">
+          <img src="assets/img/top/bottom-dec-g.png">
+        </div>
+
+      </div>
+
+      <div class="footer__bottom section-bg">
+        &copy;テンプレート
+        <a href="#" class="footer__go-to-btn top-to-js"><img src="assets/img/top/go-top-btn.png" alt=""></a>
+      </div>
+    </footer>
+  </div>
+  <!--site-center end-->
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="assets/js/main.js">
   </script>

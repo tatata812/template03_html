@@ -933,6 +933,10 @@ footer
     margin: 0 0 40px;
         border-top: #b6b6b6 1px solid;
         padding: 40px 32px 0;
+
+        @include tab{
+        padding: 40px 12px 0;
+        }
   }
 
   &__ttl {
