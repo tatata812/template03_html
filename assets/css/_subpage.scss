@@ -26,7 +26,7 @@ $sub: #f7931e;
 
   &__ttl-wrap {
     margin: 20px 0 0;
-    padding: 0 12px;
+    padding: 0 20px;
     position: relative;
 
 
@@ -141,7 +141,7 @@ $sub: #f7931e;
   }
 
   &__date {
-        @include tab {
+    @include tab {
       font-size: 14px;
     }
   }
@@ -462,52 +462,70 @@ $sub: #f7931e;
     margin: 24px 0 60px;
   }
 
-  &__ttl {
-    background-color: #ececec;
-    padding: 18px 12px;
-    margin: 0 0 60px;
+  &__section-ttl-wrap {
+    border-top: #141414 solid 1px;
+    border-bottom: #141414 solid 1px;
+    padding: 0px 24px;
+    margin: 40px 0 32px;
 
-    @include tab {
-      margin: 0 0 32px;
+  }
+
+  &__section-ttl {
+    color: $main;
+    font-size: 22px;
+
+    @include tab{
+    font-size: 18px;
+    }
+
+
+    &::before {
+      content: "■";
+      margin: 0 8px 0 0;
     }
   }
 
-  &__ttl-iner {
+  &__inner {
     max-width: 760px;
     margin: 0 auto;
-
-    position: relative;
-
-    &::before {
-      content: "";
-      background-color: $main;
-      height: 4px;
-      width: 60px;
-      position: absolute;
-      bottom: -17px;
-    }
   }
 
   &__item {
-    max-width: 760px;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    margin: 0 auto 40px;
-    padding: 0 12px;
-
-    &:last-of-type {
-      margin: 0 auto;
-    }
+    padding: 0 40px;
+    margin: 0 0 80px;
 
     @include tab {
-      flex-direction: column;
-      gap: 16px;
+      padding: 0 16px 16px;
+    }
+
+    &:last-of-type {
+      margin: 0 0;
+    }
+
+
+  }
+
+  &__text {}
+
+  &__item-ttl {
+    margin: 0 0 40px;
+    position: relative;
+    font-size: 18px;
+
+    &::before {
+      content: "";
+      background-color: $sub;
+      height: 4px;
+      width: 60px;
+      position: absolute;
+      bottom: -14px;
     }
   }
 
+  &__item-text {}
+
   &__img {
-    width: 340px;
+    width: 100%;
     aspect-ratio: 3 / 2;
     /* 横:縦 = 3:2 に固定 */
     overflow: hidden;
@@ -523,21 +541,9 @@ $sub: #f7931e;
       top: 0;
       left: 0;
     }
-
-    @include tab {
-      width: 100%;
-    }
-  }
-
-  &__item-ttl {
-    margin: 0 0 24px;
-
-    @include tab {
-      margin: 0 0 12px;
-    }
   }
 
   &__text {
-    flex: 1;
+    margin: 0 0 40px;
   }
 }

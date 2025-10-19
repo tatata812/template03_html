@@ -377,7 +377,7 @@ dt {
 
 .subpage__ttl-wrap {
   margin: 20px 0 0;
-  padding: 0 12px;
+  padding: 0 20px;
   position: relative;
 }
 .subpage__ttl-wrap::before {
@@ -747,48 +747,56 @@ dt {
 .page-services__section {
   margin: 24px 0 60px;
 }
-.page-services__ttl {
-  background-color: #ececec;
-  padding: 18px 12px;
-  margin: 0 0 60px;
+.page-services__section-ttl-wrap {
+  border-top: #141414 solid 1px;
+  border-bottom: #141414 solid 1px;
+  padding: 0px 24px;
+  margin: 40px 0 32px;
+}
+.page-services__section-ttl {
+  color: #2b5f8c;
+  font-size: 22px;
 }
 @media (max-width: 600px) {
-  .page-services__ttl {
-    margin: 0 0 32px;
+  .page-services__section-ttl {
+    font-size: 18px;
   }
 }
-.page-services__ttl-iner {
+.page-services__section-ttl::before {
+  content: "■";
+  margin: 0 8px 0 0;
+}
+.page-services__inner {
   max-width: 760px;
   margin: 0 auto;
-  position: relative;
-}
-.page-services__ttl-iner::before {
-  content: "";
-  background-color: #2b5f8c;
-  height: 4px;
-  width: 60px;
-  position: absolute;
-  bottom: -17px;
 }
 .page-services__item {
-  max-width: 760px;
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin: 0 auto 40px;
-  padding: 0 12px;
-}
-.page-services__item:last-of-type {
-  margin: 0 auto;
+  padding: 0 40px;
+  margin: 0 0 80px;
 }
 @media (max-width: 600px) {
   .page-services__item {
-    flex-direction: column;
-    gap: 16px;
+    padding: 0 16px 16px;
   }
 }
+.page-services__item:last-of-type {
+  margin: 0 0;
+}
+.page-services__item-ttl {
+  margin: 0 0 40px;
+  position: relative;
+  font-size: 18px;
+}
+.page-services__item-ttl::before {
+  content: "";
+  background-color: #f7931e;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  bottom: -14px;
+}
 .page-services__img {
-  width: 340px;
+  width: 100%;
   aspect-ratio: 3/2;
   /* 横:縦 = 3:2 に固定 */
   overflow: hidden;
@@ -805,21 +813,8 @@ dt {
   top: 0;
   left: 0;
 }
-@media (max-width: 600px) {
-  .page-services__img {
-    width: 100%;
-  }
-}
-.page-services__item-ttl {
-  margin: 0 0 24px;
-}
-@media (max-width: 600px) {
-  .page-services__item-ttl {
-    margin: 0 0 12px;
-  }
-}
 .page-services__text {
-  flex: 1;
+  margin: 0 0 40px;
 }
 
 /* =================================
